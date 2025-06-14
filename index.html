@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Voucher Especial 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-        background-color: #ff4d6d!important;
+      background-color: #ff4d6d!important;
       margin: 0;
       padding: 0;
       background: url('https://images.unsplash.com/photo-1529253355930-b2f1b556a2f3?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
@@ -22,28 +23,29 @@
     .container {
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 20px;
-      padding: 40px;
+      padding: 30px;
       text-align: center;
+      width: 90%;
       max-width: 500px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
+      font-size: 1rem;
+      margin-bottom: 20px;
     }
 
     button {
       background-color: #ff4d6d;
       border: none;
       color: white;
-      padding: 15px 30px;
+      padding: 12px 25px;
       font-size: 1rem;
       border-radius: 10px;
       cursor: pointer;
@@ -64,20 +66,34 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* 🔁 Responsividade */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Um convite especial para Stéfany... 💌</h1>
-    <p>Do seu noivo que quer te levar para um jantar.</p>
-    <button id="button" onclick="mostrarVoucher()">Abrir Voucher</button>
+    <h1>Você tem um convite especial... 💌</h1>
+    <p>Tem alguém que quer te levar para um jantar inesquecível.</p>
+    <button onclick="mostrarVoucher()" id="button">Abrir Voucher</button>
 
     <div class="voucher" id="voucher">
       <h2>🌟 Convite para o Topo do Mundo 🌟</h2>
       <p>Data: 22 de Junho de 2025<br>
          Local: Restaurante Topo do Mundo, BH<br>
          Traje: Um sorriso e seu coração 💖</p>
-         <p>Endereço: R. Sen. Milton Campos, 145 - Vila Castela, Nova Lima - MG, 34006-050</p>
+      <p style="font-style: italic;">"Prepare-se para uma noite onde tudo pode mudar... inclusive o seu status!"</p>
     </div>
   </div>
 
