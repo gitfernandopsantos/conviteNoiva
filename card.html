@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Voucher Especial 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background-color: #ff4d6d!important;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1529253355930-b2f1b556a2f3?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      max-width: 500px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #ff4d6d;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e0435f;
+    }
+
+    .voucher {
+      display: none;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Um convite especial para Stéfany... 💌</h1>
+    <p>Do seu noivo que quer te levar para um jantar.</p>
+    <button id="button" onclick="mostrarVoucher()">Abrir Voucher</button>
+
+    <div class="voucher" id="voucher">
+      <h2>🌟 Convite para o Topo do Mundo 🌟</h2>
+      <p>Data: 22 de Junho de 2025<br>
+         Local: Restaurante Topo do Mundo, BH<br>
+         Traje: Um sorriso e seu coração 💖</p>
+         <p>Endereço: R. Sen. Milton Campos, 145 - Vila Castela, Nova Lima - MG, 34006-050</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarVoucher() {
+      document.getElementById('voucher').style.display = 'block';
+      document.getElementById('button').hidden = true;
+    }
+  </script>
+</body>
+</html>
